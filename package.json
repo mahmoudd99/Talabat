@@ -1,13 +1,16 @@
 {
-    "name": "client",
-    "version": "0.0.0",
-    "scripts": {
-        "ng": "ng",
-          "start": "set NODE_OPTIONS=--openssl-legacy-provider && ng serve",
-        "build": "npm install --legacy-peer-deps && ng build --prod",
-        "test": "ng test",
-        "lint": "ng lint",
-        "e2e": "ng e2e"
+   "name": "client",
+  "version": "0.0.0",
+  "engines": {
+    "node": "16.x"
+  },
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build --configuration production",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
      
     },
     "private": true,
